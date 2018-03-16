@@ -1,4 +1,4 @@
-
+<a href="Views/studentAddView.php" >Add student</a>
 <table border="1px">
 	<tr>
 		<th>ID</th>
