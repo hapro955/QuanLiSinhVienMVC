@@ -3,9 +3,7 @@ require_once 'Library/connect.php';
 class student{
     
     public function listStudent(){
-        // $sql = "select * from student";
-        // $student = query_data($sql)
-        // return $student ;
+        
     }
     
     public function addStudent(){

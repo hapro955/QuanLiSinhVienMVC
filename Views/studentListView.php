@@ -27,4 +27,3 @@
                     <?php }?>
             </table>
     </body>
-</html>
