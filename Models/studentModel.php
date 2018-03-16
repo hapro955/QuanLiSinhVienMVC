@@ -2,7 +2,7 @@
 	class student extends database{
 		function listStudent(){
 			//$conn=mysqli_connect('thuctapphp.com','root','123456','thuctapPHP');
-			$sql="SELECT * FROM student";
+			$sql="SELECT * FROM student WHERE studentStatus=1";
 			$result=mysqli_query($this->conn,$sql);
 			return $result;
 		}
@@ -18,7 +18,9 @@
 			$sql ="INSERT INTO student(studentName,studentStatus) VALUES('$name','$status')";
 			mysqli_query($this->conn,$sql);		
 		}
-		function editStudent(){}
+		function editStudent(){
+
+		}
 		function deleteStudent(){}
 	}
 
