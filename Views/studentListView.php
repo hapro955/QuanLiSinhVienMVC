@@ -12,7 +12,7 @@
 		
 	?>
 	<tr>
-		<td><?php echo $row['studentID'];?></td>
+		<td><?php echo $row['studentId'];?></td>
 		<td><?php echo $row['studentName'];?></td>
 		<td><?php echo $row['studentStatus'];?></td>
 	</tr>
