@@ -21,7 +21,10 @@
 		function editStudent(){
 
 		}
-		function deleteStudent(){}
+		function deleteStudent($id){
+			$sql="UPDATE student SET studentStatus=0 WHERE studentId=".$id;
+			mysqli_query($this->conn,$sql);
+		}
 	}
 
 
