@@ -1,16 +1,18 @@
 <?php
-	include_once '/home/www/thuctapphp.com/QuanLiSinhVienMVC/Library/connect.php';
+    require 'Controllers/studentController.php';
+    
+    $studentController = new studentController();
+    
+    if(isset($_GET['Controller']) && $_GET['Controller'] == 'addStudent'){
+        $studentController->addStudent();
+    }
+    else if(isset($_GET['Controller']) && $_GET['Controller'] == 'updateStudent'){
+        $studentController->updateStudent();
+    }
+    else if(isset($_GET['Controller']) && $_GET['Controller'] == 'deleteStudent'){
+        $studentController->deleteStudent();
+    }
+    else{
+        $studentController->listStudent();
+    }
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<?php
-		include_once '/home/www/thuctapphp.com/QuanLiSinhVienMVC/Controllers/listStudent.php';
-		//include_once '/home/www/thuctapphp.com/QuanLiSinhVienMVC/Controllers/addStudent.php';
-
-	?>
-</body>
-</html>

@@ -1,28 +1,22 @@
-<?php
-	if(isset($_POST['add'])){
-		$name=$_POST['studentName'];
-		$status=$_POST['studentStatus'];
-		$student = new student();
-		$query = $student->addStudent($name, $status);
-		header("Location: ../index.php");
-	}
-?>
-<!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
-	<form action="#" method="POST" >
-		<table>
-			<tr>
-				Name: <input type="text" name="studentName">
-			</tr>
-			<tr>
-				Status: <input type="number" name="studentStatus" value="1">
-			</tr>
-		</table>
-			<input type="submit" name="add">
-	</form>
-</body>
+    <head>
+        <title>Them moi student</title>
+    </head>
+    <body>
+        <form action="?Controller=addStudent" method="post">
+        <table align="center">	
+        	<tr>
+                <td>Name</td>
+                <td>Status</td>
+            </tr>		
+            <tr>
+                <td><input type="text" name="name"></td>
+                <td><input type="text" name="status"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Add"></td>
+            </tr>			
+        </table>
+        </form>
+    </body>
 </html>
