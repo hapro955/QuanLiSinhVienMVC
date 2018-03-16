@@ -4,7 +4,7 @@
 		$status=$_POST['studentStatus'];
 		$student = new student();
 		$query = $student->addStudent($name, $status);
-		header("Location: ../index.php");
+		header('Location: http://thuctapphp.com/QuanLiSinhVienMVC/index.php?controller=listStudent');
 	}
 ?>
 <!DOCTYPE html>

@@ -1,4 +1,10 @@
-<a href="Views/studentAddView.php" >Add student</a>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<a href="http://thuctapphp.com/QuanLiSinhVienMVC/index.php?controller=addStudent" >Add student</a>
 <table border="1px">
 	<tr>
 		<th>ID</th>
@@ -21,3 +27,5 @@
 
 	?>
 </table>
+</body>
+</html>
