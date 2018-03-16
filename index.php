@@ -1,16 +1,4 @@
 <?php
 	include_once '/home/www/thuctapphp.com/QuanLiSinhVienMVC/Library/connect.php';
+	include_once '/home/www/thuctapphp.com/QuanLiSinhVienMVC/Controllers/listStudent.php';
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<?php
-		include_once '/home/www/thuctapphp.com/QuanLiSinhVienMVC/Controllers/listStudent.php';
-		//include_once '/home/www/thuctapphp.com/QuanLiSinhVienMVC/Controllers/addStudent.php';
-
-	?>
-</body>
-</html>
