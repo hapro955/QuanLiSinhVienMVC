@@ -6,7 +6,9 @@
 		<th>Status</th>
 	</tr>
 	<?php
-	while ($row=mysqli_fetch_assoc($result)) {
+	$student = new student();
+	$query = $student->listStudent();
+	while ($row=mysqli_fetch_assoc($query)) {
 		
 	?>
 	<tr>
